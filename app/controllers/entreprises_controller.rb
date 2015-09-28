@@ -1,5 +1,5 @@
 class EntreprisesController < ApplicationController
 	def index
-		@entreprises = Entreprise.all
+		@entreprises = Entreprise.last(3)
 	end
 end
