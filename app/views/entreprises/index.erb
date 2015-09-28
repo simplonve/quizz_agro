@@ -1,3 +1,7 @@
+<h1>Bienvenue</h1>
+<a href='questions/1'>Start</a>
+
+<h3>Liste des entreprises</h3>
 <% @entreprises.each do |entreprise|%>
-	<br><%= entreprise.naf_translated %></br>
+	<div><%= entreprise.naf %></div>
 <% end %>
