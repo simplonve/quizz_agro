@@ -1,6 +1,7 @@
-<h1>Question <%= params[:id] %></h1>
-<%= @question.text %>
-<%= @answers.good_answer %>
-<%= @answers.bad_answers %>
-
-<a href="<%= @next %>">Suivant</a>
+<div class="question-reponse">
+	<h3 class="question">Question <%= params[:id] %>:</h3>
+		<p><%= @question.text %></p>
+	<h3 class="reponse">Réponses</h3>
+		<a class="button" href="<%= @next %>"><%= @answers.good_answer %></a>
+		<a class="button" href="<%= @next %>"><%= @answers.bad_answers %></a>
+</div>
