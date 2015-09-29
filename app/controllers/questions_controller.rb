@@ -3,6 +3,8 @@ class QuestionsController < ApplicationController
 		end? ? (@next = "/result") : (@next = next_question_int.to_s)
 		@question = Question.find(params[:id])
 		@answers = Answer.where(id_question: params[:id]).take
+		@arr_answers = []
+		@arr_answers.push(@answers.good_answer, @answers.bad_answers).shuffle!
 		render 'question'
 	end
 

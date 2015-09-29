@@ -2,6 +2,6 @@
 	<h3 class="questions">Question <%= params[:id] %> :</h3>
 	<p class="question"><%= @question.text %></p>
 	<h3 class="reponses">Réponses</h3>
-	<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @answers.good_answer %>")'><%= @answers.good_answer %></a>
-	<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @answers.good_answer %>")'><%= @answers.bad_answers %></a>
+	<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @answers.good_answer %>")'><%= @arr_answers[0] %></a>
+	<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @answers.good_answer %>")'><%= @arr_answers[1] %></a>
 </div>
