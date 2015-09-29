@@ -1,7 +1,14 @@
 <div class="end">
 	<h2>Le quizz est terminé!</h2>
 	<p>Réponses correctes:</p>
+
+  <p class="compteur"></p>
+  <p> / 5</p>
 </div>
 <div class="retour_acc">
-	<a href="/" class="retour">Retour à l'accueil</a>
+	<a href="/" class="retour" onclick="reset()">Retour à l'accueil</a>
 </div>
+
+<script>
+  document.querySelectorAll('.compteur')[0].innerHTML += compteur.toString()
+</script>
