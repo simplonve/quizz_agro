@@ -1,6 +1,10 @@
-<h1>Question <%= params[:id] %></h1>
-<%= @question.text %>
-<%= @answers.good_answer %>
-<%= @answers.bad_answers %>
-
-<a href="<%= @next_question %>"><%= @next_question_text %></a>
+<div class="question-reponse">
+	<h3 class="question">Question <%= params[:id] %>:</h3>
+		<p><%= @question.text %></p>
+	<h3 class="reponse">Réponses</h3>
+	<FORM>
+		<INPUT type= "radio" name="reponse" value="jour"> <%= @answers.good_answer %>
+		<INPUT type= "radio" name="reponse" value="nuit"> <%= @answers.bad_answers %>
+	</FORM>
+	<a class="button" href="<%= @next_question %>"><%= @next_question_text %></a>
+</div
