@@ -1,7 +1,16 @@
-<h1>Bienvenue</h1>
-<a href='questions/1'>Start</a>
-
-<h3>Liste des entreprises</h3>
-<% @entreprises.each do |entreprise|%>
-	<div><%= entreprise.naf %></div>
-<% end %>
+<div>
+	<h1 class="title">Quizz'Agro</h1>
+</div>
+<div class="presentation">
+	<p>Connaissez-vous les entreprises du secteur agro-alimentaire de la région Rhône-Alpes?</p>
+</div>
+<div class="question-reponse">
+	<h3 class="question">Question:</h3>
+		<p>Ou se situe l'usine Pasquier?</p>
+	<h3 class="reponse">Réponses</h3>
+	<FORM>
+		<INPUT type= "radio" name="reponse" value="jour"> Valence
+		<INPUT type= "radio" name="reponse" value="nuit"> Privas
+	</FORM>
+	<button class="button" type="submit" form="form1" value="Submit">Suivante</button>
+</div>
