@@ -1,1 +1,6 @@
-<h1>First question</h1>
+<h1>Question <%= params[:id] %></h1>
+<%= @question.text %>
+<%= @answers.good_answer %>
+<%= @answers.bad_answers %>
+
+<a href="<%= @next_question %>"><%= @next_question_text %></a>
