@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
 	def new_question
 		@question = Question.find(params[:id])
-		answers
+		choises
 		next_link
 		render 'question'
 	end
@@ -18,7 +18,7 @@ class QuestionsController < ApplicationController
 		@answers = Answer.where(id_question: params[:id]).take
 	end
 
-	def answers
+	def choises
 		@arr_answers = []
 		@arr_answers.push(obj_answer.good_answer, obj_answer.bad_answers).shuffle!
 	end
@@ -26,7 +26,7 @@ class QuestionsController < ApplicationController
 	def end?
 		next_question_int >= nb_question
 	end
-
+	
 	def next_link
 		end? ? (@next = "/result") : (@next = next_question_int.to_s)
 	end
