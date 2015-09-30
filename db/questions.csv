@@ -1,6 +1,6 @@
 text,type
-Dans quelle ville se trouve l'entreprise,1
-Quel est le secteur d'activité de l'entreprise,2
-Combien d'employés travaillent dans l'entreprise,3
-Quel est le chiffre d'affaire de l'entreprise,4
-Quelle entreprise se situe dans la ville,5
+Dans quelle ville se trouve l'entreprise,geoville
+Quel est le secteur d'activité de l'entreprise,activite
+Combien d'employés travaillent dans l'entreprise,employes
+Quel est le chiffre d'affaire de l'entreprise,ca
+Quelle entreprise se situe dans la ville,geoentreprise

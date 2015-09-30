@@ -4,7 +4,7 @@ class CreateEntreprises < ActiveRecord::Migration
       t.string :name
       t.string :city
       t.string :ca
-      t.string :naf
+      t.string :activity
       t.string :employees
 
       t.timestamps null: false

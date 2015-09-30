@@ -12,7 +12,7 @@ csv_entreprise.each do |row|
   entreprise.ca = row.to_hash["Chiffre d'affaires
 kEUR
 Dernière année disp."]
-  entreprise.activities = row.to_hash["Activités"]
+  entreprise.activity = row.to_hash["Activités"]
   entreprise.employees = row.to_hash["Nombre d'employés
 Dernière année disp."]
   entreprise.save
@@ -22,6 +22,6 @@ csv_questions = CSV.parse(csv_question, :headers => true)
 csv_questions.each do |row|
 	question = Question.new
 	question.text = row.to_hash["text"]
-	question.type = row.to_hash["type"]
+	question.question_type = row.to_hash["type"]
 	question.save
 end
