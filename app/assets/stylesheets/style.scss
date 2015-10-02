@@ -27,7 +27,7 @@ body {
 .title{
 	width: 100%;
 	text-align: center;
-	font-size: 6em;
+	font-size: 5em;
 	color: #FF5A09;
 	padding: 4% 0 0 0;
 	margin-top: 0;
@@ -54,8 +54,8 @@ h1::after {
 .presentation{
 	text-align: center;
 	padding-bottom: 2.5%;
-	font-size: 2em;
-	line-height: 1.5em;
+	font-size: 1.5em;
+	line-height: 1em;
 	background-color: #393939;
 	color: #FF5A09;
 }
@@ -63,7 +63,7 @@ h1::after {
 .start, .end{
   width: 100%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .start{
@@ -100,27 +100,31 @@ margin-top: 12%;
 
 .question-reponse{
 	width: 100%;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.questions, .reponses{
-	font-size: 2.5em;
+.questions{
+	font-size: 1.5em;
 }
-
-.question, .reponse{
-  font-size: 1.5em;
+.reponses {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
 }
-
 .reponse{
   text-decoration: none;
+  text-align: center;
   background-color: #393939;
   border: none;
   color: #FFF;
-  margin-top: 2%;
-  padding: 1%;
+  margin-top: 4%;
+  padding: 10%;
   font-size: 1.3em;
-  font-weight: bold;
   transition: 0.5s;
+  line-height: 2em;
 }
 .reponse:hover{
   background-color: #FF5A09;
