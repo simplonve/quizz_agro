@@ -6,4 +6,12 @@ class Question < ActiveRecord::Base
 			self.text + good_entreprise.name + ' ?'
 		end
 	end
+
+	def self.next_link(question_number)
+		if question_number.to_i + 1 > 5
+			"/result"
+		else 
+			(question_number.to_i + 1).to_s
+		end 
+	end
 end
