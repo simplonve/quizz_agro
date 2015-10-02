@@ -7,8 +7,8 @@ csv_question = File.read('./db/questions.csv')
 csv_entreprise = CSV.parse(csv_liste, :headers => true)
 csv_entreprise.each do |row|
   entreprise = Entreprise.new
-  entreprise.name = row.to_hash["Nom de l'entreprise"]
-  entreprise.city = row.to_hash["Ville"]
+  entreprise.name = row.to_hash["Nom de l'entreprise"].split.map{|f| f.capitalize!}.join(" ")
+  entreprise.city = row.to_hash["Ville"].split.map{|f| f.capitalize!}.join(" ")
   entreprise.ca = row.to_hash["Chiffre d'affaires
 kEUR
 Dernière année disp."]
