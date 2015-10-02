@@ -1,15 +1,27 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  city: MyString
-  ca: MyString
-  naf: MyString
-  employees: MyString
+one: 
+  name: "Perriol Production"
+  city: "Albon"
+  ca: "1 157"
+  activity: "Activités de soutien aux cultures"
+  employees: "1"
 
 two:
-  name: MyString
-  city: MyString
-  ca: MyString
-  naf: MyString
-  employees: MyString
+  name: "Hypharm"
+  city: "Albon"
+  ca: "n.d."
+  activity: "Élevage d'autres animaux"
+  employees: "n.d."
+
+three:
+  name: "Hm Clause"
+  city: "Alixan"
+  ca: "n.d."
+  activity: "Culture de légumes de melons de racines"
+  employees: "n.d."
+
+four:
+  name: "Sarl Horticole Des Charmes"
+  city: "Anneyron"
+  ca: "n.d."
+  activity: "Reproduction de plantes"
+  employees: "n.d."

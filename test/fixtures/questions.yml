@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: Dans quelle ville se trouve l'entreprise 
+  question_type: geoville
+
+two:
+  text: Quel est le secteur d'activité de l'entreprise 
+  question_type: activite
