@@ -109,10 +109,10 @@ margin-top: 12%;
 	font-size: 1.5em;
 }
 .reponses {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
+  display: inline;
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
 }
 .reponse{
   text-decoration: none;
@@ -121,7 +121,7 @@ margin-top: 12%;
   border: none;
   color: #FFF;
   margin-top: 4%;
-  padding: 10%;
+  padding: 1%;
   font-size: 1.3em;
   transition: 0.5s;
   line-height: 2em;
