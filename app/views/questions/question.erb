@@ -1,8 +1,9 @@
 <div class="question-reponse">
-	<h3 class="questions">Question <%= params[:id] %> :</h3>
-	<p class="question"><%= @interro %></p>
-	<h3 class="reponses">Réponses</h3>
-	<% @choices.each do |choice| %>
-		<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @good_answer %>")'><%= choice %></a>
-	<% end %>
+	<h3 class="questions">Question <%= params[:id] %> : <%= @interro %></h3>
+<!-- 	<p class="question"><%= @interro %></p>
+ -->	<section class="reponses">
+		<% @choices.each do |choice| %>
+			<a class="reponse" href="<%= @next %>" onclick='check_answer(this.innerHTML, "<%= @good_answer %>")'><%= choice %></a>
+		<% end %>
+	</section>
 </div>
