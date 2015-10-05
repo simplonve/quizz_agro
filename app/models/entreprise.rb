@@ -11,7 +11,7 @@ class Entreprise < ActiveRecord::Base
 	end
 
 	def self.build_choices_array(all_bad_answers, good_answer)
-		answers = all_bad_answers.take(3)
+		answers = all_bad_answers.sample(3)
 		answers << good_answer
 	end
 
