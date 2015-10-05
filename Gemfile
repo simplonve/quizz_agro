@@ -34,6 +34,8 @@ gem 'pry'
 group :production do
   # Postgre est le serveur de production herbergé sur Heroku
   gem 'pg'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
